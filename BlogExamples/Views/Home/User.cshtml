@@ -1,0 +1,32 @@
+﻿@model BlogExamples.Models.CreateUserVm
+
+@{
+    ViewBag.Title = "Create User";
+}
+
+<h2>Create a New User</h2>
+
+<p>
+	User Name:
+	@Html.TextBoxFor(m => m.NewUserAccount.UserName)
+</p>
+<p>
+	New Password:
+	@Html.TextBoxFor(m => m.NewUserAccount.Password)
+</p>
+<p>
+	First Name:
+	@Html.TextBoxFor(m => m.NewUserProfile.FirstName)
+</p>
+<p>
+	Last Name:
+	@Html.TextBoxFor(m => m.NewUserProfile.LastName)
+</p>
+<p>
+	Address:
+	@Html.TextBoxFor(m => m.NewUserProfile.Address)
+</p>
+<p>
+	Phone:
+	@Html.TextBoxFor(m => m.NewUserProfile.PhoneNumber)
+</p>
